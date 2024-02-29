@@ -1,19 +1,31 @@
 {
   "name": "nforget",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "npx webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HisRyan/Nforget.git"
+    "url": "https://github.com/HisRyan/Nforget.git"
   },
   "author": "lhj",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HisRyan/Nforget/issues"
   },
-  "homepage": "https://github.com/HisRyan/Nforget#readme"
+  "homepage": "https://github.com/HisRyan/Nforget#readme",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12"
+  }
 }
