@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/axios"></script>
+    <script src="../dist/index.js"></script>
+</head>
+<body>
+<div>222</div>
+<script>
+  const KtAxios = nforget
+  console.log(KtAxios)
+  console.log('nforget',nforget)
+  const request = new KtAxios({
+    baseURL: ' https://mock.mengxuegu.com/mock/6524b73b96175e3c6ac1ca3d/example'
+  })
+
+  const getList = () => {
+    return request.post({
+      url: '/user/getList'
+    })
+  }
+
+  getList()
+
+
+</script>
+</body>
+
+</html>

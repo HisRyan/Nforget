@@ -1,14 +1,29 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
+    // "target": "esnext",
+    "target": "es2015",
+    "module": "ES2015",
+    "strict": true,
+    "jsx": "preserve",
     "moduleResolution": "node",
-    "module": "es6",
-    "target": "es5",
-    "jsx": "react",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["node", "jest"],
+    // "paths": {
+    //   "@/*": ["src/*"]
+    // },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+
+    // add
+    "outDir": "./dist",
     "declaration": true,
-    "declarationDir": "./dist",
-    "allowJs": true,
+    "declarationDir": "./dist"
+    // "removeComments": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
